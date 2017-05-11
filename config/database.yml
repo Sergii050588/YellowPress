@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV["DATABASE_USERNAME"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
+
+development:
+  <<: *default
+  database: ukrop_development
+
+production:
+  <<: *default
+  database: ukrop_production
+
+test:
+  <<: *default
+  database: ukrop_test

@@ -1,0 +1,18 @@
+<div style="width: 100%;">
+  <p>
+    <strong>Name:</strong>
+   <%= @post.title %>
+  </p>
+
+  <strong>Body:</strong>
+  <div class="froala-view">
+    <%= simple_format(@post.body) %>
+  </div>
+
+
+  <td><%= image_tag @post.image_url(:thumb).to_s %></td>
+
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

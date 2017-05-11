@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body { 
+  padding-top: 90px; 
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer {
+  height: 115px;
+  margin-top: -115px;
+  position: relative;
+}
+
+.empty {
+  height: 115px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: bolder-box;
+}
